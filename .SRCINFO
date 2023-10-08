@@ -1,6 +1,6 @@
 pkgbase = kcalendarcore
 	pkgdesc = The KDE calendar access library
-	pkgver = 5.240.0.20231001
+	pkgver = 5.240.0.20231008
 	pkgrel = 1
 	url = https://community.kde.org/Frameworks
 	arch = x86_64
@@ -15,7 +15,7 @@ pkgbase = kcalendarcore
 	depends = glibc
 	depends = libical
 	depends = qt6-base
-	source = git+https://invent.kde.org/frameworks/kcalendarcore#commit=aba6350bba8f68dec953d218ec71596b94959bfe
+	source = git+https://invent.kde.org/frameworks/kcalendarcore#commit=9e228b5c812e460f5a182d238df66df709df7ed7
 	validpgpkeys = 53E6B47B45CEA3E0D5B7457758D0EE648A48B3BB
 	sha256sums = SKIP
 
