@@ -1,7 +1,7 @@
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=kcalendarcore
-pkgver=5.240.0.20231014
+pkgver=5.240.0.20231020
 pkgrel=1
 pkgdesc='The KDE calendar access library'
 arch=(x86_64)
