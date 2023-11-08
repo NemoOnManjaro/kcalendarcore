@@ -1,7 +1,7 @@
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=kcalendarcore
-pkgver=5.240.0.20231105
+pkgver=5.245.0
 pkgrel=1
 pkgdesc='The KDE calendar access library'
 arch=(x86_64)
@@ -16,15 +16,14 @@ makedepends=(doxygen
              qt6-doc
              qt6-tools)
 groups=(kf6)
-#source=(https://download.kde.org/stable/frameworks/${pkgver%.*}/$pkgname-$pkgver.tar.xz{,.sig})
-makedepends+=(git)
-_commit=921e04f64921e86288e57144c82dab2a1a0679b5
-source=(git+https://invent.kde.org/frameworks/$pkgname#commit=$_commit)
-sha256sums=('SKIP')
-validpgpkeys=(53E6B47B45CEA3E0D5B7457758D0EE648A48B3BB) # David Faure <faure@kde.org>
+source=(https://download.kde.org/unstable/frameworks/$pkgver/$pkgname-$pkgver.tar.xz{,.sig})
+sha256sums=('0cc437d22b319c28a1cc85823c016870caf35c000f065242512ee452893954e2'
+            'SKIP')
+validpgpkeys=(53E6B47B45CEA3E0D5B7457758D0EE648A48B3BB  # David Faure <faure@kde.org>
+              E0A3EB202F8E57528E13E72FD7574483BB57B18D) # Jonathan Esk-Riddell <jr@jriddell.org>
 
 build() {
-  cmake -B build -S $pkgname \
+  cmake -B build -S $pkgname-$pkgver \
     -DBUILD_TESTING=OFF \
     -DBUILD_QCH=ON
   cmake --build build
