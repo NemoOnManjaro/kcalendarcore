@@ -6,7 +6,7 @@ pkgrel=1
 pkgdesc='The KDE calendar access library'
 arch=(x86_64)
 url='https://community.kde.org/Frameworks'
-license=(LGPL)
+license=(LGPL-2.0-only LGPL-3.0-only)
 depends=(gcc-libs
          glibc
          libical
