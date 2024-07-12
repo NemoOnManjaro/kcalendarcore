@@ -10,7 +10,8 @@ license=(LGPL-2.0-only LGPL-3.0-only)
 depends=(gcc-libs
          glibc
          libical
-         qt6-base)
+         qt6-base
+         qt6-declarative)
 makedepends=(doxygen
              extra-cmake-modules
              qt6-doc
